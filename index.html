@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tool Dự Đoán Baccarat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dự Đoán Baccarat</h1>
+
+    <div class="input-section">
+      <label>Nhập kết quả ván:</label>
+      <button onclick="addResult('P')">Player</button>
+      <button onclick="addResult('B')">Banker</button>
+      <button onclick="addResult('T')">Tie</button>
+      <button onclick="resetHistory()">Xóa lịch sử</button>
+    </div>
+
+    <div class="history-section">
+      <h2>Lịch sử ván chơi:</h2>
+      <div id="historyDisplay"></div>
+    </div>
+
+    <div class="prediction-section">
+      <h2>Dự đoán ván kế tiếp:</h2>
+      <p id="predictionText">Chưa có dữ liệu.</p>
+      <p id="suggestionText"></p>
+    </div>
+
+    <div class="summary-section">
+      <h3>Lãi/Lỗ 5 ván gần nhất: <span id="profit5">0</span></h3>
+      <h3>Lãi/Lỗ 10 ván gần nhất: <span id="profit10">0</span></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
